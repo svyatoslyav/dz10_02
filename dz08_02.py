@@ -34,6 +34,6 @@ except ValueError:
 else:
     try:
         amountout = amountin*(exr[currencyin-1]/exr[currencyout-1])
-        print(f"{amountin} {currencylist[currencyin-1]} рівне {round(amountout,2)} {currencylist[currencyout-1]}")
+        print(f"{amountin} {currencylist[currencyin-1]} рівне {round(amountout,3)} {currencylist[currencyout-1]}")
     except IndexError:
         print("Ваше число валюти поза списком")
